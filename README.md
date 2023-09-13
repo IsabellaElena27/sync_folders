@@ -14,6 +14,5 @@ Steps:
    - if the directory doesn't exist, it is created
 
 All the history of synchronization is logged in log_file and also printed in console.
-
 The function runs in an infinite loop. It synchronize folders at a specified time interval.
 It is created to be used on the command line. Paths to 'source_folder', 'replica_folder', 'log_file' and the sync interval are mandatory.
