@@ -5,7 +5,7 @@ The sync_folders() function syncronize files and directories between two folders
 # Steps:
 1. Check if the replica folder exists, if not, the function creates it.
 2. Sync files from replica to source
-   - for each file in 'replica_folder', the function checks if it also exists in 'source_folder'; if the file doesn't exist in 'source_folder', it is deleted from 'replica_folder'
+   - for each file in 'replica_folder', the function checks if it also exists in 'source_folder'; if the file doesn't exist in 'source_folder'(it was deleted), it is deleted from 'replica_folder'
 3. Sync files from source to replica
    - for each file in 'source_folder', the function checks if it also exists in 'replica_folder';
    - if the file exists in 'replica_folder' and the version in 'source_folder' is updated, the file is copied from source to replica;
